@@ -1,10 +1,11 @@
 import unittest
 from selenium import webdriver
 
+
 class Challenge1(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome("/usr/local/bin/chromedriver")
+        self.driver = webdriver.Chrome("../venv/chromedriver-Darwin")
 
     def tearDown(self):
         self.driver.close()
@@ -16,5 +17,3 @@ class Challenge1(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-

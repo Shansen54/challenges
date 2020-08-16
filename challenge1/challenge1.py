@@ -5,7 +5,7 @@ from selenium import webdriver
 class Challenge1(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome("../venv/chromedriver-Darwin")
+        self.driver = webdriver.Chrome("../venv/chromedriver")
 
     def tearDown(self):
         self.driver.close()
